@@ -74,14 +74,14 @@ main{
     grid-area: main;
     width: 100%;
     height: 100%;
+ 
 }
 
 /* First section classes */
 
 .slogan-section{
     width: 100%;
-    height: 80vh;
-    
+    min-height: 80vh;
 }
 
 .slogan-card{
@@ -101,6 +101,7 @@ main{
     width: 50%;
     min-width: 400px;
     flex-grow: 1;
+    
 
     display: flex;
     flex-direction: column;
