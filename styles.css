@@ -1,8 +1,9 @@
 html{
     box-sizing: border-box;
     font-size: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -15,6 +16,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: #FFF3B8;
+    
 } 
 
 .container{
@@ -22,10 +24,20 @@ body{
     min-height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 3% 1fr 3%;
+    grid-template-columns: 1fr ;
     grid-template-rows: 15vh 1fr;
-    grid-template-areas: ". header ."
-                          ". main ." ;
+    grid-template-areas: " header "
+                          " main " ;
+    
+    
+}
+
+
+
+header{
+    grid-area: header;
+    
+    
 }
 
 nav{
@@ -34,6 +46,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
+    padding: 0 3%;
 }
 
 .logo-container{
@@ -42,6 +55,7 @@ nav{
     margin-left: 30px;
     position: relative;
 }
+
 
 .logo-container img{
     height: 125px;
@@ -66,14 +80,21 @@ nav{
     font-weight: 700;
 }
 
-header{
-    grid-area: header;
+.menu-icon{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 2.5rem;
+    display: none;
+    cursor: pointer;
 }
+
 
 main{
     grid-area: main;
     width: 100%;
     height: 100%;
+    
  
 }
 
@@ -81,7 +102,9 @@ main{
 
 .slogan-section{
     width: 100%;
-    min-height: 80vh;
+    min-height: 85vh;
+    padding: 0 3%;
+    
 }
 
 .slogan-card{
@@ -111,9 +134,10 @@ main{
 }
 
 .slogan-card-text h1{
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 700;
     text-align: left;
+    color: #200932;
     
 }
 
@@ -123,6 +147,8 @@ main{
     font-weight: 700;
     text-align: justify;
     width: 80%;
+    margin-top: 1rem;
+    color: #200932;
 }
 
 .slogan-card-buttons{
@@ -132,6 +158,7 @@ main{
      justify-content: left;
      align-items: center; 
      height: 60px;
+     margin-top: 1.5rem;
     }
     
     
@@ -147,7 +174,8 @@ main{
     font-weight: 700;
     margin-right: 25px;
     vertical-align: middle;
-    text-align: center
+    text-align: center;
+    cursor: pointer;
 }
     
 .slogan-card-buttons .button2{
@@ -158,10 +186,11 @@ main{
     box-shadow: none;
     border: solid 1px #200932 ;
     border-radius: 40px;
-    
     font-size: 16px;
     font-weight: 700;
     margin-right: 25px;
+    color: #200932;
+    cursor: pointer;
 }
     
 
@@ -185,15 +214,168 @@ main{
     min-height: 350px;
 }
 
+
+
+/* Second section classes */
+
 .mission-section{
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: #EF81EB;
+    padding: 2rem 3%;
+}
+
+.mission-section p{
     font-size: 2rem;
     font-weight: 700;
-    color: #200932;
+    color: #FFF3B8;
+    width: 80%;
+    line-height: 3.5rem;
+}
+
+
+
+/* Third section classes */
+
+
+.advantages-section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #200932;
+    color: #FFF3B8;
+    padding: 2rem 3%;
+}
+
+h3{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.why{
+    margin-bottom: 3rem;
+}
+
+
+.advantages-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-column{
+    max-width: 300px;
     
+}
+
+.advantages-card i{
+    font-size: 3rem;
+}
+
+.advantages-card h5{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* four section classes */
+
+.work-section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #200932;
+    padding: 2rem 3%;
+    
+}
+
+
+    .work{
+        margin-bottom: 3rem;
+        
+    }
+
+    .work-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .work-card-column{
+        max-width: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+   .circle{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 50%;
+       background-color: #FFF3B8;
+       width: 100px;
+       height: 100px;
+       font-size: 2rem;
+   }
+    
+    .work-card h5{
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .up{
+        position: fixed;
+        right: 5%;
+        bottom: 10%;
+        opacity: 0.5;
+    }
+
+    .up:hover{
+        opacity: 1;
+    }
+
+    .up a{
+        font-size: 3rem;
+        color: yellow;
+        
+    }
+
+
+
+
+
+
+@media (max-width: 992px){
+
+    .menu-icon{
+        display: flex;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+
+
 
 }
