@@ -78,6 +78,11 @@ nav{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
+    transition: all 0.2s ease-in ;
+}
+
+.nav-links a:hover{
+    color: #EF81EB;
 }
 
 .menu-icon{
@@ -176,6 +181,12 @@ main{
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.button1:hover{
+    background-color: #EF81EB;
+
 }
     
 .slogan-card-buttons .button2{
@@ -191,6 +202,12 @@ main{
     margin-right: 25px;
     color: #200932;
     cursor: pointer;
+    transition: all 0.3s ease-in;
+    
+}
+
+.button2:hover{
+    background-color: #EF81EB;
 }
     
 
@@ -201,7 +218,9 @@ main{
     flex-grow: 1;
     display: flex;
     align-items: center;
-    justify-content: center;      
+    justify-content: center;
+
+          
 }
 
 
@@ -212,6 +231,7 @@ main{
     max-width: 500px;
     min-width:350px;
     min-height: 350px;
+    border-radius: 1rem;
 }
 
 
